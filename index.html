@@ -21,7 +21,7 @@
 		.track-link {
 			color: black
 		}
-		p.album-title {
+		.album-title {
 		cursor: pointer;
 		}
 	</style>
@@ -55,21 +55,21 @@
 	</nav>
 	<div class="container-fluid border ">
 		<div class="row">
-			<div class="col pb-3">
+			<div class="col">
 				<h1 class="pt-3">The Archive</h1>
 				<p class="lead" >Welcome to this collection of accurate transposition
-				of Radiohead songs into guitar (an sometimes piano) chords and tabs.
+				of Radiohead songs into guitar (sometimes piano) chords and tabs.
 				You'll find the transpositions below.</p><hr/>
-				<h4>Guitar Chords</h4>
+				<h2 style="text-align:center" class="pb-2">Albums</h2>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col" ng-app="myApp" ng-controller="trackCtrl">
-				<div ng-repeat="album in myAlbums" ng-click="toggleMe(album)" class="element">
-					<p class="album-title"><b>{{album.title + " (" + album.year +")"}}</b></p>
+			<div style="text-align:center" class="col" ng-app="myApp" ng-controller="trackCtrl">
+				<div class="element"  ng-repeat="album in myAlbums" ng-click="toggleMe(album)" >
+					<h4 class="album-title py-2">{{album.title + " (" + album.year +")"}}</h4>
 					<ul ng-show="album.show" class="list-group-flush px-0 mx-0 py-0">
 						<a ng-repeat="track in album.tracks" class="track-link" href='chord-frame.php?filename={{track.link}}'>
-						<li class="list-group-item">{{track.name}}</li>
+						<h4 class="lead list-group-item">{{track.name}}</h4>
 						</a>
 					</ul>
 					<span></span>
