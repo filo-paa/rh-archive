@@ -1,0 +1,58 @@
+{
+   "albums": [
+      {
+         "title": "Pablo Honey",
+         "year": "1993",
+         "tracks": [
+		 {"name":"Creep","link":"creep.php"}
+		 ],
+		 "showlist": 0
+      },
+
+      {
+         "title": "The Bends",
+         "year": "1995",
+         "tracks": [
+		 {"name":"High and Dry","link":"highanddry.php"},
+		 {"name":"Fake Plastic Trees","link":"fakeplastic.php"},
+		 {"name":"Just","link":"just_thebends.php"},
+		 {"name":"Black Star","link":"blackstar.php"},
+		 {"name":"Street Spirit (Fade Out)","link":"streetspirit.php"}
+		 ],
+		 "showlist": 1
+      },
+	  {
+         "title": "OK Computer",
+         "year": "1997",
+         "tracks": [
+			{"name":"Airbag","link":"airbag.php"},
+			{"name":"Exit Music (for a Film)","link":"exitmusic.php"},
+			{"name":"Karma Police","link":"karma.php"},
+			{"name":"Climbing Up The Walls","link":"climbingup.php"},
+			{"name":"No Surprises","link":"nosurprises.php"},
+			{"name":"Lucky","link":"lucky.php"}
+		],
+		 "showlist": 0
+      },
+	  {
+         "title": "Kid A",
+         "year": "2000",
+         "tracks": [
+			{"name": "Everything in its Right Place","link":"eiirp.php"},
+			{"name":"Optimistic","link":"optimistic.php"}
+		],
+		 "showlist": 0
+      },
+	  {
+         "title": "Amnesiac",
+         "year": "2000",
+         "tracks": [
+			{"name": "Pyramid Song","link":"pyramidsong.php"},
+			{"name":"You And Whose Army?","link":"youandwhosearmy.php"},
+			{"name":"I Might Be Wrong","link":"imightbewrong.php"},
+			{"name":"Knives Out","link":"knivesout.php"}
+		],
+		 "showlist": 0
+      }
+   ]
+}
