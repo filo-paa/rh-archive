@@ -56,8 +56,8 @@ $filename = $_GET["filename"];
 	</nav>
 	<div class="container-fluid border ">
 		<div class="row">
-			<div class="col py-3">
-			<h3>Chords</h3>	
+			<div class="col py-1">
+			<!--h3>Chords</h3-->	
 			</div>
 		</div>
 		<?php readfile("chords/".$filename) or header("Location: 404.html"); ?>
@@ -70,5 +70,6 @@ $filename = $_GET["filename"];
 <script src="zlibs/js/jquery-3.3.1.js"></script>
 <script src="zlibs/js/popper.js"></script>
 <script src="zlibs/js/bootstrap.js"></script>
+<script type="text/javascript" src="transpose.js"></script>
   </body>
 </html>
