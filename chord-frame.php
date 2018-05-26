@@ -71,5 +71,10 @@ $filename = $_GET["filename"];
 <script src="zlibs/js/popper.js"></script>
 <script src="zlibs/js/bootstrap.js"></script>
 <script type="text/javascript" src="transpose.js"></script>
+<script>
+function showMe(filename) {
+	//$("#" + filename.split(".")[0]).dialog();
+}
+</script>
   </body>
 </html>
