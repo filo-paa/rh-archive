@@ -25,6 +25,43 @@ $filename = $_GET["filename"];
 		.track-link {
 			color: black
 		}
+		.modal-content {
+			margin: auto;
+			
+		}
+		.modal {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			padding-top: 100px; /* Location of the box */
+			left: 0;
+			top: 0;
+			width: 100%; 
+			height: 100%;  
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+		}
+		@keyframes zoom {
+			from {transform:scale(0)} 
+			to {transform:scale(1)}
+		}
+		.modal-content {
+			width: 300px;
+		}
+		.lyrics {
+			margin: 0em 1em 1em 0em
+		}
+		.lyrics1 {
+			margin: 0em 1em 0em 0em
+		}
+		.lyrics2 {
+			margin: 0em 1em 1em 0em
+		}
+		.ch {
+			margin: 1em 1em 0em 0em
+		}
+
 	</style>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
@@ -39,7 +76,7 @@ $filename = $_GET["filename"];
 		<div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
 			<ul class="navbar-nav">
 				<li class="nav-item active align-middle">
-					<a class="nav-link align-bottom" href="#">
+					<a class="nav-link align-bottom" href="index.html">
 					<b>Archive</b></a>
 				</li>
 				<li class="nav-item"><a class="nav-link" href="#"><b>News</b></a></li>
@@ -72,9 +109,7 @@ $filename = $_GET["filename"];
 <script src="zlibs/js/bootstrap.js"></script>
 <script type="text/javascript" src="transpose.js"></script>
 <script>
-function showMe(filename) {
-	//$("#" + filename.split(".")[0]).dialog();
-}
+
 </script>
   </body>
 </html>

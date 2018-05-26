@@ -1,4 +1,10 @@
 function transposeMe(amount){
+	capo = $("p.capo")[0];
+	sum = (Number(capo.innerText.split(" ")[1])-Number(amount));
+	if ((sum==12)||(sum==-12)){
+		sum=0;
+	}
+	capo.innerText = "Capo: " + sum;
 	$("p.ch").each(function(k,v){
 		new_array = "";
 		let ch_array = v.innerText.split(" ");
