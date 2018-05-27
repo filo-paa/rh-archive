@@ -34,9 +34,11 @@ function transposeChord(chord, amount) {
 		});
 }
 
+
+
 $('.no-zoom').bind('touchend', function(e) {
-  e.preventDefault();
-  // Add your code here. 
-  $(this).click();
-  // This line still calls the standard click event, in case the user needs to interact with the element that is being clicked on, but still avoids zooming in cases of double clicking.
+	if ($(window).width() < 768){
+		e.preventDefault();
+		$(this).click();
+	}
 })
