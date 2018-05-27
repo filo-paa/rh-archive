@@ -1,6 +1,6 @@
 <?php
 //get json from txt
-$filename = "tracklist.json";
+$filename = "data/tracklist.json";
 $myfile = fopen($filename, "r") or die("Unable to open file!");
 $N = filesize($filename);
 $myjson = fread($myfile,$N);

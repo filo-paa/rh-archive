@@ -11,59 +11,8 @@ $filename = $_GET["filename"];
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="zlibs/css/bootstrap.min.css">
-	
-    <style>
-		navbar.a {color: inherit; }
-		a.nav-link {
-			font-size: 19px;
-		}
-		.carousel-item {
-			transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-			-webkit-backface-visibility: visible;
-	        backface-visibility: visible;
-		}
-		.track-link {
-			color: black
-		}
-		.modal-content {
-			margin: auto;
-			
-		}
-		.modal {
-			display: none; /* Hidden by default */
-			position: fixed; /* Stay in place */
-			z-index: 1; /* Sit on top */
-			padding-top: 100px; /* Location of the box */
-			left: 0;
-			top: 0;
-			width: 100%; 
-			height: 100%;  
-			overflow: auto; /* Enable scroll if needed */
-			background-color: rgb(0,0,0); /* Fallback color */
-			background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-		}
-		@keyframes zoom {
-			from {transform:scale(0)} 
-			to {transform:scale(1)}
-		}
-		.modal-content {
-			width: 300px;
-		}
-		.lyrics {
-			margin: 0em 1em 1em 0em
-		}
-		.lyrics1 {
-			margin: 0em 1em 0em 0em
-		}
-		.lyrics2 {
-			margin: 0em 1em 1em 0em
-		}
-		.ch {
-			margin: 1em 1em 0em 0em
-		}
-
-	</style>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="zlibs/css/chord-frame.css">
+    <script src="zlibs/js/angular-1.6.9.min.js"></script>
   </head>
   <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light px-4 justify-content-between">
@@ -104,9 +53,9 @@ $filename = $_GET["filename"];
 					<p>&copy 2018 <a style="color:white" href="https://github.com/filo-paa">filo-paa</a></p>
 		</div>
     </footer>
-<script src="zlibs/js/jquery-3.3.1.min.js"></script>
-<script src="zlibs/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="transpose.js"></script>
+<script type="text/javascript" src="zlibs/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="zlibs/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="zlibs/js/rh-transpose.js"></script>
 <script>
 
 </script>
