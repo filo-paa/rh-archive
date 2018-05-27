@@ -10,7 +10,7 @@ $filename = $_GET["filename"];
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="zlibs/css/bootstrap.css">
+    <link rel="stylesheet" href="zlibs/css/bootstrap.min.css">
 	
     <style>
 		navbar.a {color: inherit; }
@@ -104,9 +104,8 @@ $filename = $_GET["filename"];
 					<p>&copy 2018 <a style="color:white" href="https://github.com/filo-paa">filo-paa</a></p>
 		</div>
     </footer>
-<script src="zlibs/js/jquery-3.3.1.js"></script>
-<script src="zlibs/js/popper.js"></script>
-<script src="zlibs/js/bootstrap.js"></script>
+<script src="zlibs/js/jquery-3.3.1.min.js"></script>
+<script src="zlibs/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="transpose.js"></script>
 <script>
 
