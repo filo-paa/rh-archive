@@ -25,7 +25,7 @@
 		</div>
 	</div>
 	<div class="pb-3"></div>
-	<?php readfile("footer.html") or header("Location: 404.html"); ?>
+	<?php readfile("footer.html") or header("Location: 404.php"); ?>
 <script>
 var app = angular.module('myApp', []);
 app.controller('trackCtrl', function($scope, $http) {
