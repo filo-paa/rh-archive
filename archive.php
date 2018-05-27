@@ -16,7 +16,7 @@
 		<div class="row">
 			<div class="col">
 				<h1 class="pt-3">The Archive</h1>
-				<p class="lead" >You can find the chords of each song by clicking on the name of the EP/Album below.</p><hr/>
+				<p class="lead" >You can find the chords of each available song by clicking on the name of the EP/Album below.</p><hr/>
 				<h2 style="text-align:center" class="pb-2">Albums</h2>
 			</div>
 		</div>
