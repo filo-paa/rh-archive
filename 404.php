@@ -25,7 +25,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   </head>
   <body>
-	<?php readfile("nav.html") or header("Location: 404.html"); ?>
+	<?php readfile("nav.html") or header("Location: index.php"); ?>
 	<div class="container-fluid border ">
 		<div class="row">
 			<div class="col pb-3">
@@ -35,7 +35,7 @@
 			</div>
 		</div>
 	</div>
-	<?php readfile("footer.html") or header("Location: 404.html"); ?>
+	<?php readfile("footer.html") or header("Location: index.php"); ?>
 <script>
 var app = angular.module('myApp', []);
 app.controller('trackCtrl', function($scope, $http) {

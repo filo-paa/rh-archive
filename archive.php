@@ -11,7 +11,7 @@
     <script src="zlibs/js/angular-1.6.9.min.js"></script>
   </head>
   <body>
-	<?php readfile("nav.html") or header("Location: 404.html"); ?>
+	<?php readfile("nav.html") or header("Location: 404.php"); ?>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col">
@@ -35,7 +35,7 @@
 		</div>
 	</div>
 	<div class="pb-3"></div>
-	<?php readfile("footer.html") or header("Location: 404.html"); ?>
+	<?php readfile("footer.html") or header("Location: 404.php"); ?>
 <script>
 var app = angular.module('myApp', []);
 app.controller('trackCtrl', function($scope, $http) {
