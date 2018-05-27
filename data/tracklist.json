@@ -4,7 +4,7 @@
          "title": "Pablo Honey",
          "year": "1993",
          "tracks": [
-		 {"name":"Creep","link":"creep.php"}
+		 {"name":"Creep","link":"creep.html"}
 		 ]
       },
 
@@ -12,23 +12,23 @@
          "title": "The Bends",
          "year": "1995",
          "tracks": [
-		 {"name":"High and Dry","link":"highanddry.php"},
-		 {"name":"Fake Plastic Trees","link":"fakeplastic.php"},
-		 {"name":"Just","link":"just_thebends.php"},
-		 {"name":"Black Star","link":"blackstar.php"},
-		 {"name":"Street Spirit (Fade Out)","link":"streetspirit.php"}
+		 {"name":"High and Dry","link":"highanddry.html"},
+		 {"name":"Fake Plastic Trees","link":"fakeplastic.html"},
+		 {"name":"Just","link":"just_thebends.html"},
+		 {"name":"Black Star","link":"blackstar.html"},
+		 {"name":"Street Spirit (Fade Out)","link":"streetspirit.html"}
 		 ]
       },
 	  {
          "title": "OK Computer",
          "year": "1997",
          "tracks": [
-			{"name":"Airbag","link":"airbag.php"},
-			{"name":"Exit Music (for a Film)","link":"exitmusic.php"},
-			{"name":"Karma Police","link":"karma.php"},
-			{"name":"Climbing Up The Walls","link":"climbingup.php"},
-			{"name":"No Surprises","link":"nosurprises.php"},
-			{"name":"Lucky","link":"lucky.php"}
+			{"name":"Airbag","link":"airbag.html"},
+			{"name":"Exit Music (for a Film)","link":"exitmusic.html"},
+			{"name":"Karma Police","link":"karma.html"},
+			{"name":"Climbing Up The Walls","link":"climbingup.html"},
+			{"name":"No Surprises","link":"nosurprises.html"},
+			{"name":"Lucky","link":"lucky.html"}
 		]
       },
 	  {
