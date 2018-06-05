@@ -1,95 +1,162 @@
-<style>
+
+<style type="text/css">
 	.okc {
-		color: #092f5e;
+			color: #092f5e;
 	}
 	.ch {
-		color: #12519e;
+			color: #12519e;
 	}
 	.song-title {
-		color:#092f5e;
+			color:#092f5e;
 	}
 </style>
+
 <div class="container-fluid border">
-<div class="row">
-<div class="col">	
-<h4 class="pt-3 song-title"><b>Karma Police</b></h4>
-<p> <b>Key:</b> first part in <i>A minor</i> (more precisely A Dorian), outro in <i>B minor</i>
-<br/><b>Tempo:</b> &#126;75 bpm
-<br/><b>Tuning:</b> standard (EADGBE)
-<br/>
-<div align="right"><b>Transpose:</b>
-<button id="tdown" class="btn border btn-lg no-zoom" style="width:75 px; background-color:#092f5e; color:white" onclick="transposeMe(-1)"><b>&nbsp;-1&nbsp;</b></button>
-<button id="tup" class="btn border btn-lg no-zoom" style="width:75 px; background-color:#092f5e; color:white" onclick="transposeMe(+1)"><b>&nbsp;+1&nbsp;</b></button>
+  <div class="row">
+	<div class="col">
+	  <h4 class="pt-3 song-title">
+		<b>Karma Police</b>
+	  </h4>
+	  <b>Key:</b> first part in 
+	  <i>A minor</i> (more precisely A Dorian), outro in 
+	  <i>B minor</i>
+	  <br />
+	  <b>Tempo:</b> ~75 bpm
+	  <br />
+	  <b>Tuning:</b> standard (EADGBE)
+	  <br /><br />
+	  <div align="right">
+	  <b>Transpose:</b> 
+	  <button class="btn border btn-lg no-zoom"
+	  style="width:150 px; background-color:#092f5e; color:white"
+	  onclick="transposeMe(-1)">
+		<b>&darr;</b>
+	  </button> 
+	  <button class="btn border btn-lg no-zoom"
+	  style="width:150 px; background-color:#092f5e; color:white"
+	  onclick="transposeMe(+1)">
+		<b>&uarr;</b>
+	  </button></div>
+	  
+	  <hr />
+	  
+	  <p class="capo">Capo: 0</p>
+	  <h5 id="intro" class="pt-2 okc">
+		<b>Intro</b>
+	  </h5>
+	  
+	  <p class="ch">Am &#8195; D7/F# &#8195; Em &#8195; (/F#) &middot; G</p>
+	  
+	  <p class="ch">Am &#8195; Fmaj7 &#8195; Em &#8195; (/F#) &middot; G</p>
+	  
+	  <p class="ch">Am &#8195; D &#8195; G &middot; G/F# &middot; C &middot; C/B</p>
+	  
+	  <p class="ch">Am &#8195; Am &#8195; Bm &#8195; D</p>
+	  <p class="lyrics2"></p>
+	  
+	  
+	  <h5 id="strofa1&amp;2" class="pt-2 okc">
+		<b>Strofa</b>
+	  </h5>
+	  
+	  <p class="ch">Am &#8195; D7/F# &#8195; Em &#8195; (/F#) &middot; G</p>
+	  <p class="lyrics1">Karma Police, arrest this man</p>
+	  <p class="lyrics2">(Karma Police, arrest this girl)</p>
+	  
+	  <p class="ch">Am &#8195; Fmaj7 &#8195; Em &#8195; (/F#) &middot;  G</p>
+	  <p class="lyrics1">he talks in math / he buzzez like a fridge</p>
+	  <p class="lyrics2">(her Hitler hairdo / is making me fill ill)</p>
+	  
+	  <p class="ch">Am &#8195; D &#8195; G &middot; G/F# &middot; C &middot; C/B</p>
+	  <p class="lyrics1">He&#39;s like a detuned radio</p>
+	  <p class="lyrics2">(and we have crushed her party)</p>
+	  
+	  <p class="ch">Am &#8195; Am &#8195; Bm &#8195; D</p>
+	  <p class="lyrics2">//instrumental</p>
+	  <p>
+	  <b>Re.</b> 
+	  <i>repeat w/ lyrics in parenthesis.</i></p>
+	  
+	  
+	  <h5 id="ch1" class="pt-2 okc">
+		<b>Chorus</b>
+	  </h5>
+	  
+	  <p class="ch">C &#8195; D &#8195; G &#8195; F#(7)</p>
+	  <p class="lyrics1">this is what you get &#8195;</p>
+	  
+	  <p class="ch">C &#8195; D &#8195; G &#8195; F#(7)</p>
+	  <p class="lyrics1">this is what you get &#8195;</p>
+	  
+	  <p class="ch">C &#8195; D &#8195; G &#8195; Bm &#8195;</p>
+	  <p class="lyrics1">this is what you get</p>
+	  
+	  <p class="ch">C &#8195; C &#8195; Bm &#8195; D</p>
+	  <p class="lyrics1">when you mess with us...</p>
+	  
+	  <p class="lyrics2"></p>
+	  
+	  
+	  <h5 id="st3" class="pt-2 okc">
+		<b>Strofa</b>
+	  </h5>
+	  
+	  <p class="ch">Am &#8195; D7/F# &#8195; Em &#8195; (/F#) &middot; G</p>
+	  <p class="lyrics1">Karma Police, I&#39;ve given all I can</p>
+	  
+	  <p class="ch">Am &#8195; Fmaj7 &#8195; Em &#8195; (/F#) &middot; G</p>
+	  <p class="lyrics1">it&#39;s not enough / I&#39;ve give all I can</p>
+	  
+	  <p class="ch">Am &#8195; D &#8195; G &middot; G/F# &middot; C &middot; C/B</p>
+	  <p class="lyrics1">but we&#39;re still on the payroll</p>
+	  
+	  <p class="ch">Am &#8195; Am &#8195; Bm &#8195; D</p>
+	  <p class="lyrics2">//instrumental</p>
+	  
+	  
+	  <h5 id="ch2" class="pt-2 okc">
+		<b>Chorus</b>
+	  </h5>
+	  
+	  <p class="ch">C &#8195; D &#8195; G &#8195; F#(7)</p>
+	  <p class="lyrics1">this is what you get &#8195;</p>
+	  
+	  <p class="ch">C &#8195; D &#8195; G &#8195; F#(7)</p>
+	  <p class="lyrics1">this is what you get &#8195;</p>
+	  
+	  <p class="ch">C &#8195; D &#8195; G &#8195; Bm &#8195;</p>
+	  <p class="lyrics1">this is what you get</p>
+	  
+	  <p class="ch">C &#8195; C &#8195; Bm &#8195; D</p>
+	  <p class="lyrics1">when you mess with us...</p>
+	  <p class="lyrics2"></p>
+	  
+	  
+	  <h5 id="outro" class="pt-2 okc">
+		<b>Outro</b>
+	  </h5>
+	  
+	  <p class="ch mb-0">Bm &#8195; D &#8195; G &#8195; D
+	  &#8195;</p>
+	  <p class="ch mt-0">G &#8195; D &#8195; E &#8195; E(add9)</p>
+	  <p class="lyrics1">for a minute there i lost myself
+	  <br />
+	  <br /></p>
+	  <p class="lyrics2">//repeat to fade
+	  <br />
+	  <br /></p>
+	  <h5 id="special" class="pt-2 okc">
+	  
+	  
+		<b>Special Chords</b>
+	  </h5>
+	  <br />
+	  <ul>
+		<li>D7/F#: 
+		<img class="py-2" id="d7fsharp"
+		src="img/d7fsharp.png" /></li>
+	  </ul>
+	</div>
+  </div>
 </div>
-<hr/>
-<p class="capo">Capo: 0</p>
 
-<h5 id="intro" class="pt-2 okc"><b>Intro</b></h5>
-<p class="ch">Am &emsp; D7/F# &emsp; Em &emsp; (/F#) - G
-<p class="ch">Am &emsp; Fmaj7 &emsp; Em &emsp; G
-<p class="ch">Am &emsp; D &emsp; C - C/B - G - G/F#
-<p class="ch">Am &emsp; Am &emsp; Bm &emsp; D
-<p class="lyrics2">
-
-<h5 id="strofa1&2" class="pt-2 okc"><b>Strofa</b></h5>
-<p class="ch">Am &emsp; D7/F# &emsp; Em &emsp; (/F#) - G
-<p class="lyrics1">Karma Police, arrest this man
-<p class="lyrics2">(Karma Police, arrest this girl)
-<p class="ch">Am &emsp; Fmaj7 &emsp; Em &emsp; (/F#) - G
-<p class="lyrics1">he talks in math / he buzzez like a fridge
-<p class="lyrics2">(her Hitler hairdo / is making me fill ill)
-<p class="ch">Am &emsp; D &emsp; G - G/F# - C - C/B 
-<p class="lyrics1">He's like a detuned radio
-<p class="lyrics2">(and we have crushed her party)
-<p class="ch">Am &emsp; Am &emsp; Bm &emsp; D
-<p class="lyrics2">//instrumental
-
-<p><b>Re.</b><i> repeat w/ lyrics in parenthesis.</i>
-
-<h5 id="ch1" class="pt-2 okc"><b>Chorus</b></h5>
-<p class="ch">C &emsp; D &emsp; G &emsp;  F#7
-<p class="lyrics1">this is what you get &emsp;
-<p class="ch">C &emsp; D &emsp; G &emsp;  F#7
-<p class="lyrics1">this is what you get &emsp;
-<p class="ch">C &emsp; D &emsp; G &emsp;  Bm &emsp; C &emsp; Bm &emsp; D
-<p class="lyrics1">this is what you get
-<p class="ch">C &emsp; Bm &emsp; D
-<p class="lyrics1">when you mess with us...
-<p class="lyrics2">
-
-<h5 id="st3" class="pt-2 okc"><b>Strofa</b></h5>
-<p class="ch">Am &emsp; D7/F# &emsp; Em &emsp; (/F#) - G
-<p class="lyrics1">Karma Police, I've given all I can
-<p class="ch">Am &emsp; Fmaj7 &emsp; Em &emsp; (/F#) - G
-<p class="lyrics1">it's not enough / I've give all I can
-<p class="ch">Am &emsp; D &emsp; G - G/F# - C - C/B 
-<p class="lyrics1">but we're still on the payroll
-<p class="ch">Am &emsp; Am &emsp; Bm &emsp; D
-<p class="lyrics2">//instrumental
-
-<h5 id="ch2" class="pt-2 okc"><b>Chorus</b></h5>
-<p class="ch">C &emsp; D &emsp; G &emsp;  F#7
-<p class="lyrics1">this is what you get &emsp;
-<p class="ch">C &emsp; D &emsp; G &emsp;  F#7
-<p class="lyrics1">this is what you get &emsp;
-<p class="ch">C &emsp; D &emsp; G &emsp;  Bm &emsp; 
-<p class="lyrics1">this is what you get
-<p class="ch">C &emsp; Bm &emsp; D
-<p class="lyrics1">when you mess with us...
-<p class="lyrics2">
-
-<h5 id="outro" class="pt-2 okc"><b>Outro</b></h5>
-<p class="ch mb-0">Bm &emsp; D &emsp; G &emsp;  D &emsp;
-<p class="ch mt-0">G  &emsp; D &emsp; E &emsp; E(9)
-	
-<p class="lyrics1">for a minute there i lost myself
-<br/><br/><p class="lyrics2">//repeat to fade
-<br/><br/>
-
-<h5 id="special" class="pt-2 okc"><b>Special Chords</b></h5>
-<br/>
-<li>D7/F#:
-<img class="py-2" id="d7fsharp" src="img/d7fsharp.png"/>
-</div>
-</div>
-</div>

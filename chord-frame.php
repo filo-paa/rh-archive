@@ -11,7 +11,9 @@ $filename = $_GET["filename"];
 		<link rel="stylesheet" href="zlibs/css/bootstrap.min.css"/>
 		<link rel="stylesheet" href="zlibs/css/main.css"/>
 		<script src="zlibs/js/angular-1.6.9.min.js"></script>
+		
 	</head>
+	<title>rh-archive.org/<?= $filename ?></title>
 	<body>
 		<?php readfile("nav.html") or header("Location: 404.php"); ?>
 		<?php readfile("chords/".$filename) or header("Location: 404.php"); ?>
