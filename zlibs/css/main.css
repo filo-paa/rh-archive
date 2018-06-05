@@ -52,3 +52,22 @@
 		.album-title {
 		cursor: pointer;
 		}
+		 /* unvisited link */
+		a.index:link {
+			color: #12519e;
+		}
+
+		/* visited link */
+		a.index:visited {
+			color: #12519e;
+		}
+
+		/* mouse over link */
+		a.index:hover {
+			color: #54a1cf;
+		}
+
+		/* selected link */
+		a.index:active {
+			color: #12519e;
+		}
