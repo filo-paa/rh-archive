@@ -26,17 +26,6 @@
 	</div>
 	<div class="pb-3"></div>
 	<?php readfile("footer.html") or header("Location: 404.php"); ?>
-<script>
-var app = angular.module('myApp', []);
-app.controller('trackCtrl', function($scope, $http) {
-  $http.get("tracklist.php").then(function (response) {
-	  $scope.myAlbums = response.data.albums;
-  });
-  $scope.toggleMe = function(x) {
-	x.show = !x.show;
-  }
-});
-</script>
 <script src="zlibs/js/jquery-3.3.1.min.js"></script>
 <script src="zlibs/js/bootstrap.min.js"></script>
   </body>
