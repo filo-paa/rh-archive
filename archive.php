@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="zlibs/css/main.css">
     <script src="zlibs/js/angular-1.6.9.min.js"></script>
   </head>
+  <title>rh-archive.org</title>
   <body>
 	<?php readfile("nav.html") or header("Location: 404.php"); ?>
 	<div class="container-fluid">
@@ -36,6 +37,8 @@
 	</div>
 	<div class="pb-3"></div>
 	<?php readfile("footer.html") or header("Location: 404.php"); ?>
+<script src="zlibs/js/jquery-3.3.1.min.js"></script>
+<script src="zlibs/js/bootstrap.min.js"></script>
 <script>
 var app = angular.module('myApp', []);
 app.controller('trackCtrl', function($scope, $http) {
@@ -46,8 +49,9 @@ app.controller('trackCtrl', function($scope, $http) {
 	x.show = !x.show;
   }
 });
+$(document).ready(function(){
+	$("#archivenav").addClass("active");
+});
 </script>
-<script src="zlibs/js/jquery-3.3.1.min.js"></script>
-<script src="zlibs/js/bootstrap.min.js"></script>
   </body>
 </html>
