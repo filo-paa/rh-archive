@@ -4,7 +4,7 @@
          "title": "Pablo Honey",
          "year": "1993",
          "tracks": [
-		 {"name":"Creep","link":"creep.html"}
+		 {"name":"Creep","link":"creep.html","show":0}
 		 ]
       },
 
@@ -12,41 +12,41 @@
          "title": "The Bends",
          "year": "1995",
          "tracks": [
-		 {"name":"High and Dry","link":"highanddry.html"},
-		 {"name":"Fake Plastic Trees","link":"fake-plastic-trees.html"},
-		 {"name":"Just","link":"just_thebends.html"},
-		 {"name":"Black Star","link":"blackstar.html"},
-		 {"name":"Street Spirit (Fade Out)","link":"streetspirit.html"}
+		 {"name":"High and Dry","link":"highanddry.html","show":0},
+		 {"name":"Fake Plastic Trees","link":"fake-plastic-trees.html","show":1},
+		 {"name":"Just","link":"just_thebends.html","show":0},
+		 {"name":"Black Star","link":"blackstar.html","show":0},
+		 {"name":"Street Spirit (Fade Out)","link":"streetspirit.html","show":0}
 		 ]
       },
 	  {
          "title": "OK Computer",
          "year": "1997",
          "tracks": [
-			{"name":"Airbag","link":"airbag.html"},
-			{"name":"Exit Music (for a Film)","link":"exitmusic.html"},
-			{"name":"Karma Police","link":"karma.html"},
-			{"name":"Climbing Up The Walls","link":"climbingup.html"},
-			{"name":"No Surprises","link":"nosurprises.html"},
-			{"name":"Lucky","link":"lucky.html"}
+			{"name":"Airbag","link":"airbag.html","show":0},
+			{"name":"Exit Music (for a Film)","link":"exitmusic.html","show":0},
+			{"name":"Karma Police","link":"karma.html","show":1},
+			{"name":"Climbing Up The Walls","link":"climbingup.html","show":0},
+			{"name":"No Surprises","link":"nosurprises.html","show":0},
+			{"name":"Lucky","link":"lucky.html","show":0}
 		]
       },
 	  {
          "title": "Kid A",
          "year": "2000",
          "tracks": [
-			{"name": "Everything in its Right Place","link":"eiirp.php"},
-			{"name":"Optimistic","link":"optimistic.php"}
+			{"name": "Everything in its Right Place","link":"eiirp.php","show":0},
+			{"name":"Optimistic","link":"optimistic.php","show":0}
 		]
       },
 	  {
          "title": "Amnesiac",
          "year": "2000",
          "tracks": [
-			{"name": "Pyramid Song","link":"pyramidsong.php"},
-			{"name":"You And Whose Army?","link":"youandwhosearmy.php"},
-			{"name":"I Might Be Wrong","link":"imightbewrong.php"},
-			{"name":"Knives Out","link":"knivesout.php"}
+			{"name": "Pyramid Song","link":"pyramidsong.php","show":0},
+			{"name":"You And Whose Army?","link":"youandwhosearmy.php","show":0},
+			{"name":"I Might Be Wrong","link":"imightbewrong.php","show":0},
+			{"name":"Knives Out","link":"knivesout.php","show":0}
 		]
       }
    ]
