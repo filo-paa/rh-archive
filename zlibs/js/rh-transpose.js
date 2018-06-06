@@ -1,10 +1,11 @@
 $(document).ready(function(){
-	if ($("p.ch").length > 0) {
+	if ($(".ch").length > 0) {
 		p_ch=[];
-		$("p.ch").each(function(k,v){
+		$(".ch").each(function(k,v){
 			p_ch.push(this);
 		})
-		 capo = $("p.capo")[0];
+		capo = $("p.capo")[0];
+		
 		capo_val = Number(capo.innerText.split(" ")[1]);
 	}
 })
