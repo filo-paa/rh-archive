@@ -3,6 +3,7 @@ $(document).ready(function(){
 		p_ch=[];
 		$(".ch").each(function(k,v){
 			p_ch.push(this);
+			this.innerText = this.innerText.trimEnd();
 		})
 		capo = $("p.capo")[0];
 		
@@ -25,7 +26,7 @@ function transposeMe(amount){
 			let new_chord = transposeChord(ch,amount);
 			new_array = new_array.concat(transposeChord(ch,amount) + " ");
 			}
-		this.innerText = new_array;
+		this.innerText = new_array.trimEnd();
 		})
 		new_array=[];
 }
