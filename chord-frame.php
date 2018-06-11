@@ -1,5 +1,7 @@
 <?php
+include "functions.php";
 $filename = $_GET["filename"];
+logMe("server.log",$filename);
 ?>
 <!DOCTYPE html>
 <html lang="en">

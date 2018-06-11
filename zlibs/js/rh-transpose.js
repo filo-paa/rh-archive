@@ -27,6 +27,9 @@ function transposeMe(amount){
 			new_array = new_array.concat(transposeChord(ch,amount) + " ");
 			}
 		this.innerText = new_array.trimEnd();
+		//trimEnd() removes the extra whitespace at the end
+		//it avoids cumulation whenever transposeMe() is called multiple times
+		//as it keeps adding whitespace at the end on top of the old one
 		})
 		new_array=[];
 }
